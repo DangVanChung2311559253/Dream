@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <title>Giỏ hàng</title>
+    <link rel="stylesheet" href="Dream/CSS/header_footer.css">
+    <link rel="stylesheet" href="Dream/CSS/ThueTC.css">
+</head>
+
+<body>
+    <div class="container-fluid header-bg-1 sticky-top vien">
+        <div class="container ">
+            <div class="d-flex align-items-center justify-content-center">
+                <div class="logo_header">
+                    <a class="nav-link" href="index.html"><img src="Dream/Images/Logo/Dream.png" alt=""></a>
+                </div>
+                <nav class=" navbar navbar-expand-sm ">
+                    <button class=" navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapsibleNavbar">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                        <ul class="navbar-nav">
+
+                            <div class="menu_header">
+                                <ul class="navbar-nav">
+                                    <li class="nav-item ">
+                                        <a href="index.html" >Trang chủ</a>
+                                    </li>
+                                    <li class="nav-item " onmouseenter="showTailieu()" onclick="toggleTailieu()"
+                                        onmouseleave="hideTailieu()">
+                                        <div class="tailieu">
+                                            <a class="nav-link" href="Tai_lieu.html">Tài liệu</a>
+                                        </div>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="Gioithieu.html">Giới thiệu </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="Trang_chu.html">Giới thiệu sách</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="Tin_tuc.html">Tin tức</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="form_header">
+                                <form class="form-inline">
+                                    <div class="input-group">
+                                        <div class="nut_timkiem"><i class="fa fa-search" aria-hidden="true"></i></div
+                                            class="nut_timkiem">
+                                        <input type="text" class="form-control " placeholder="" width="100%">
+                                    </div>
+                                </form>
+                            </div>
+                            <a href="Dang_nhap.html">
+                                <div class="button-header"><button type="button" class="btn btn-primary">Đăng
+                                        nhập</button>
+                            </a>
+                    </div>
+                    <div class="cart">
+                        <a href="Gio_hang.html"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a>
+                    </div>
+                    </ul>
+            </div>
+            </nav>
+        </div>
+        <div class="container   dropdown-tl-main " id="showtailieu" onmouseenter="showTailieu()"
+            onmouseleave="hideTailieu()">
+            <div class="vien dropdown-tl-vien">
+                <div class="d-flex align-items-center justify-content-center">
+                    <div class="dropdown-tailieu">
+                        <div class="row">
+                            <div class="col-sm-7">
+                                <a href=""><button type="button" class="btn btn-light">Sách giấy</button></a>
+                                <a href=""><button type="button" class="btn btn-light">Sách điện tử</button></a>
+                                <a href=""><button type="button" class="btn btn-light">Báo, tạp chí</button></a>
+                                <a href=""><button type="button" class="btn btn-light">Luận văn, luận
+                                        án</button></a>
+                                <a href=""><button type="button" class="btn btn-light">Tài liệu tham khảo
+                                    </button></a>
+                                <a href=""><button type="button" class="btn btn-light">Video </button></a>
+                                <a href=""><button type="button" class="btn btn-light">Ảnh </button></a>
+                            </div>
+                            <div class="col-sm-5">
+                                <img src="Dream/Images/Banner/banner-menu.jpg" alt="" style="width: 100%;">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div class="container vien_all bg-1">
+        <div class="diachigh">
+            <h5>Địa chỉ giao hàng</h5>
+            <hr>
+            <div class="thongtingh">
+                <form action="">
+                    <div class="form-control">
+                        <span>Họ tên người nhận</span>
+                        <input type="text" name="hoten" id="hoten" placeholder="Nhập họ tên người nhận">
+                    </div>
+                    <div class="form-control">
+                        <span>Email</span>
+                        <input type="email" name="email" id="email" placeholder="Nhập email">
+                    </div>
+                    <div class="form-control">
+                        <span>Số điện thoại</span>
+                        <input type="number" name="sdt" id="sdt" placeholder="VD: 019022xxxx (10 ký tự số)">
+                    </div>
+                    <div class="form-control">
+                        <span>Tinh/Thành phố</span>
+                        <select class="form-select" id="sel1" name="sellist1">
+                            <option>Chọn tỉnh/thành phố</option>
+                            <option>Hồ Chí Minh</option>
+                        </select>
+                    </div>
+                    <div class="form-control">
+                        <span>Quận/Huyện</span>
+                        <select class="form-select" id="sel1" name="sellist1">
+                            <option>Quận 1</option>
+                            <option>Quận 2</option>
+                            <option>Quận 3</option>
+                            <option>Quận 4</option>
+                            <option>Quận 5</option>
+                        </select>
+                    </div>
+                    <div class="form-control">
+                        <span>Phường xã</span>
+                        <select class="form-select" id="sel1" name="sellist1">
+                            <option>Phường Bình chánh</option>
+                        </select>
+                    </div>
+                    <div class="form-control">
+                        <span>Địa chỉ nhận hàng</span>
+                        <input type="text" name="diachinhanhang" id="diachinhanhang">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="container vien_all bg-2">
+        <div class="diachigh">
+            <h5>Phương Thức vận chuyển</h5>
+            <hr>
+            <div class="thongtingh">
+                <span>Quý khách vui lòng điền tên và địa chỉ giao nhận trước</span>
+                <form action="">
+                    <div class="form-check">
+                        <input type="radio" class="form-check-input" id="vanchuyen_radio1" name="vanchuyen"
+                            value="option1" checked>
+                        <label class="form-check-label" for="vanchuyen_radio1">Giao hàng tiêu chuẩn: 20.000đ</label>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="container vien_all bg-2">
+        <div class="diachigh">
+            <h5>Phương Thức Thanh Toán</h5>
+            <hr>
+            <div class="thongtingh">
+                <span>Quý khách vui lòng điền tên và địa chỉ giao nhận trước</span>
+                <form action="">
+                    <div class="form-check">
+                        <input type="radio" class="form-check-input" id="tt_radio1" name="ThanhToan" value="option1"
+                            checked>
+                        <label class="form-check-label" for="tt_radio1"><img src="Dream/Images/Logo/cash@2x.png"
+                                alt="">Thanh toán khi nhận hàng</label>
+                    </div>
+                    <div class="form-check">
+                        <input type="radio" class="form-check-input" id="tt_radio2" name="ThanhToan" value="option2"
+                            checked>
+                        <label class="form-check-label" for="tt_radio2"><img src="Dream/Images/Logo/ATM.jpg" alt="">ATM
+                            / Internet Banking</label>
+                    </div>
+                    <div class="form-check">
+                        <input type="radio" class="form-check-input" id="tt_radio3" name="ThanhToan" value="option3"
+                            checked>
+                        <label class="form-check-label" for="tt_radio3"><img src="Dream/Images/Logo/Visa.jpg"
+                                alt="">Visa / Master / JCB</label>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="container vien_all bg-2 " style="margin-bottom: 20px;">
+        <div class="diachigh">
+            <h5>Kiểm tra lại đơn hàng</h5>
+            <hr>
+            <div class="row gh-sp " id="showcart_tt">
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid vien_all bg-3 sticky-bottom">
+        <nav>
+            <div class="container">
+                <div class="count_tien">
+                    <div class="tt">
+                        <div class="muc_ct_tt">
+                            Thành tiền
+                        </div>
+                        <div class="tien_tt">
+                            <span></span>
+                        </div>
+                    </div>
+                    <div class="tt">
+                        <div class="muc_ct_tt">
+                            Phí vận chuyển
+                        </div>
+                        <div class="tien_tt">
+                            <span>20.000đ</span>
+                        </div>
+                    </div>
+                    <div class="tt">
+                        <div class="muc_ct_tt">
+                            Tổng số tiền
+                        </div>
+                        <div class="tien_tt">
+                            <span></span>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div class="xn-thanhtoan">
+                    <div class="xacnhan row">
+                        <div class="form-check col-sm-8">
+                            <input type="checkbox" class="form-check-input" id="xn_tt_check1" name="xn_tt" value="something"
+                                checked>
+                            <label class="form-check-label" for="xn_tt_check1">Điều khoản & Điều kiện của TuongLai.com</label>
+                        </div>
+                        <script>
+                            document.getElementById("xn_tt_check1").addEventListener("click", function (e) {
+                                e.preventDefault(); 
+                            });
+                        </script>
+                        <div class="nut_xn col-sm-4">
+                            <button type="button" class="btn btn-danger">Thanh Toán</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+</body>
+<script src="Dream/JS/tailieu.js">
+
+</script>
+<script src="Dream/JS/gio_hang.js"></script>
+
+
+</html>

@@ -1,0 +1,257 @@
+/* -----------------------bg-1---------------------------- */
+
+.bg-1{
+    background-image: url(../Images/Banner/OIP.jpg);
+    object-fit: cover;
+    width: 100%;
+    background-size: cover;
+}
+
+.main_sach{
+    margin: 3% 10px;
+}
+
+.bg-1 .mucluc_sach{
+    margin-bottom: 35px;
+}
+
+.bg-1 .mucluc_sach a{
+    color: white;
+    font-size: 17px;
+    opacity: 0.8;
+}
+
+.bg-1 .mucluc_sach a::after{
+    content: "/";
+    padding-left: 8px;
+    padding-right: 5px;
+}
+
+.bg-1 .mucluc_sach a:last-child::after{
+    content: "";
+}
+
+.bg-1 .mucluc_sach a:last-child{
+    font-weight: bold;
+    text-decoration: underline;
+    opacity: 1;
+}
+
+.bg-1 .sach{
+    display: flex;
+    align-items: center;
+}
+
+.bg-1 .sach img{
+    width: 230px;
+    border-radius: 25px;
+    margin-right: 50px;
+}
+
+.bg-1 .sach .chu_sach h1{
+    color: white;
+    font-weight: bold;
+}
+
+.bg-1 .sach .sach_ct{
+    display: flex;
+    flex-direction:column ;
+    color: white;
+}
+
+.bg-1 .sach .sach_ct div{
+    margin-bottom: 20px;
+    font-size: 20px;
+    font-weight: normal;
+}
+
+.bg-1 .sach .sach_ct div span:first-child{
+    margin-right: 40px;
+}
+
+.bg-1 .sach .sach_ct div i{
+    margin-right: 15px;
+}
+
+.bg-1 .sach .sach_ct span{
+    font-size: 20px;
+}
+
+.bg-1 .sach .sach_ct span i{
+    margin-right: 15px;
+}
+
+.bg-1 .sach .sach_ct span:nth-of-type(1){
+    margin-bottom: 10px;
+}
+
+.bg-1 .sach .sach_ct span:nth-of-type(2){
+    margin-bottom: 25px;
+}
+
+.bg-1 .sach .sach_ct .thue{
+    display: flex ;
+    align-items: center;
+}
+
+.bg-1 .sach .sach_ct .thue button{
+    border-radius: 20px;
+    margin-right: 40px;
+    font-size: 23px;
+}
+
+
+.bg-1 .sach .sach_ct .thue  i{
+    font-size: 25px;
+}
+
+
+/* -----------------------bg-2---------------------------- */
+.bg-2{
+    margin-top: 50px;
+}
+
+.bg-2-gt{
+    border-radius: 20px;
+}
+
+.gioithieu_sach{
+    margin: 30px;
+}
+
+.gioithieu_sach h4{
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.gioithieu_sach span{
+    font-size: 17px;
+    font-weight: normal;
+    
+}
+
+
+/* -----------------------bg-3---------------------------- */
+.bg-3{
+    margin-top: 30px;
+}
+
+
+
+.bg-3-gt{
+    border-radius: 20px;
+}
+
+.binh_luan{
+    margin: 30px;
+}
+
+.binh_luan h4{
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+
+.binh_luan .nd-binhluan{
+    text-align: center;
+}
+
+
+/* -----------------------bg-4---------------------------- */
+.bg-4{
+    margin-top: 30px;
+}
+
+.bg-4 .container{
+    border-radius: 10px;
+}
+
+.bg-4 .ds_sach_dt{
+    margin: 20px;
+
+}
+.bg-4 .menu_sdientu{
+    justify-content: space-between;
+    display: flex;
+    border-bottom: 1px solid rgb(201, 200, 200);
+}
+
+.bg-4 .menu_sdientu a{
+    color: #2db56b;
+}
+.bg-4 .menu_sdientu span:hover{
+    border-bottom: 1px solid #2db56b;
+}
+
+.bg-4 .loai_sdientu{
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+}
+
+.bg-4 .loai_sdientu img{
+    width: 100%;
+    border-radius: 10px;
+}
+
+.bg-4 .loai_sdientu .sdientu{
+    flex: 20%;
+}
+
+
+.bg-4 .loai_sdientu .sdientu, .sdientu:last-child{
+    margin-right: 15px;
+}
+
+.bg-4 .loai_sdientu  .sdientu:last-child{
+    margin-right: 0px;
+}
+
+
+.bg-4 .loai_sdientu  .sdientu h5{
+    margin-top: 10px;
+    font-size: 18px;
+    height: 50px;
+    width: 200px;
+    margin-bottom: 0;
+}
+
+.bg-4 .loai_sdientu  .sdientu a img {
+    transition: opacity 0.3s ease; 
+}
+
+.bg-4 .loai_sdientu  .sdientu a:hover{
+    color: #2db56b;
+    opacity: 0.8; 
+    filter: brightness(0.8); 
+}
+
+.bg-4 .loai_sdientu  .sdientu img:hover{
+    opacity: 0.8; 
+    filter: brightness(0.8); 
+}
+
+
+.bg-4 .loai_sdientu  .sdientu p{
+    font-size: 14px;
+}
+
+
+.bg-4 .loai_sdientu  .sdientu span button{
+    font-size: 14px;
+    background-color: #d9d9d9;
+    border: 0;
+    border-radius: 10px;
+    margin-right: 3px;
+}
+
+
+.bg-4 .loai_sdientu  .sdientu span button:nth-child(2) i{
+    margin-right: 5px;
+}
+
+#album-anh img{
+    width: 100%;
+    margin-bottom: 10px;
+}
+

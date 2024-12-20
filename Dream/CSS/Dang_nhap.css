@@ -1,0 +1,79 @@
+.bg-dn{
+    background-image: url(../Images/Banner/backgrounf.png);
+    
+    background-size: cover; 
+    height: 91vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+}
+
+.header-dn{
+    display: flex;
+    align-items: center;
+}
+
+.header-dn a{
+    flex: 35%;
+    font-size: 20px;
+}
+
+.header-dn h3{
+    flex: 65%;
+    text-transform: uppercase;
+    font-size: 35px;
+}
+
+.vien-dn{
+    border: 1px solid white;
+    border-radius: 10px;
+    width: 50%;
+    height: 50vh;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.dang-nhap{
+    margin: 20px;
+    width: 100%;    
+}
+
+.form-dn{
+    margin-top: 30px;
+}
+
+.form-dn div:nth-child(1){
+    margin-bottom: 10px;
+}
+
+.form-dn div input{
+    padding: 10px;
+}
+
+.form-dn div label {
+    font-size: 18px;
+}
+
+.hienthimk {
+    position: relative;
+}
+
+.hienthimk i{
+    position: absolute;
+    right: 13px;
+    top: 14px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.dang-nhap button{
+    width: 100%;
+    padding: 20px;
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+

@@ -1,0 +1,178 @@
+/* ------------bg-1---------------------- */
+.bg-1{
+    margin-top: 40px;
+}
+
+.bg-1 h5{
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.bg-1 .diachigh{
+    margin: 20px;
+}
+
+.bg-1 .thongtingh .form-control{
+    border: 0;
+    display: flex;
+    align-items: center;
+}
+
+.bg-1 .thongtingh .form-control span{
+    flex: 20%;
+}
+
+.bg-1 .thongtingh .form-control input{
+    height: 40px;
+    padding-left: 10px;
+}
+
+.bg-1 .thongtingh .form-control input,.thongtingh .form-control select {
+    flex: 80%;
+    border: 1px solid #9fa7ab;
+    border-radius: 5px;
+}
+
+
+/* ------------bg-2---------------------- */
+.bg-2{
+    margin-top: 20px;
+}
+
+.bg-2 h5{
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.bg-2 .diachigh{
+    margin: 20px;
+}
+
+.bg-2 .thongtingh span {
+    margin-left: 10px;
+    display: none;
+}
+
+.bg-2 .thongtingh .form-check{
+    margin-left: 10px;
+}
+
+.bg-2 .thongtingh .form-check input{
+    margin-right: 10px;
+}
+
+.bg-2 .thongtingh .form-check {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.bg-2 .thongtingh .form-check label{
+    font-weight: bold;
+}
+
+.bg-2 .thongtingh .form-check  img{
+    margin-right:  10px;
+    width: 50px;
+}
+
+
+
+ .gh-left .gh-sp{
+    padding: 20px 10px;
+}
+
+.gh-sp .col-sm-4{
+    display: flex;
+    justify-content: center;
+}
+
+.gh-sp img{
+    max-width: 120px;
+    
+}
+
+ .gh-sp .row .col-sm-8{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-right: 10px;
+    padding-left: 0;
+}
+
+.gh-sp .col-sm-5{
+    display: flex;
+    align-items: center;
+}
+
+.gh-sp .row .col-sm-8 p{
+    font-size: 20px;
+    font-weight: 500;
+}
+
+ .gh-sp .row .col-sm-8 span span{
+    font-weight: bold;
+}
+
+ .gh-sp .col-sm-5 .col-sm-5{
+    display: flex;
+    align-items: center;
+}
+
+/* ---------------------bg-3----------------- */
+.bg-3  .count_tien .tt{
+    display: flex;
+    justify-content: end;
+    font-size: 16px;
+    margin-bottom: 5px;
+    
+}
+
+.bg-3  .count_tien .tt:nth-child(1){
+    margin-top: 5px;
+}
+
+.bg-3  .count_tien .tt .muc_ct_tt{
+    width: 80%;
+    text-align: end;
+}
+
+.bg-3  .count_tien .tt .tien_tt{
+    width: 20%;
+    text-align: end;
+    margin-right: 20px;
+    font-size: 17px;
+}
+
+.bg-3  .count_tien .tt:nth-child(3) .muc_ct_tt{
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.bg-3  .count_tien .tt:nth-child(3) .tien_tt{
+    font-weight: bold;
+    font-size: 18px;
+    color: #febf02;
+}
+
+.bg-3 .xn-thanhtoan {
+    margin-bottom: 10px;
+}
+
+
+.bg-3 .xn-thanhtoan .xacnhan{
+    display: flex;
+    align-items: center;
+}
+
+.bg-3 .xn-thanhtoan .xacnhan button{
+    width: 100%;
+    padding: 5px;
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+
+
+

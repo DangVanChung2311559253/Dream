@@ -1,0 +1,685 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <title>Tai lieu - Sách giấy</title>
+    <link rel="stylesheet" href="Dream/CSS/header_footer.css">
+    <link rel="stylesheet" href="Dream/CSS/Sach_giay.css">
+
+</head>
+
+<body>
+    <div class="container-fluid header-bg-1 sticky-top vien">
+        <div class="container ">
+            <div class="d-flex align-items-center justify-content-center">
+                <div class="logo_header">
+                    <a class="nav-link" href="Trang_chu.html"><img src="C:\Users\ACER\Downloads\Dream\Dream\Images\Logo\Dream.png" alt=""></a>
+                </div>
+                <nav class=" navbar navbar-expand-sm ">
+                    <button class=" navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapsibleNavbar">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                        <ul class="navbar-nav">
+
+                            <div class="menu_header">
+                                <ul class="navbar-nav">
+                                    <li class="nav-item ">
+                                        <a href="Trang_chu.html">Trang chủ</a>
+                                    </li>
+                                    <li class="nav-item " onmouseenter="showTailieu()" onclick="toggleTailieu()"
+                                        onmouseleave="hideTailieu()" id="highlight_gach">
+                                        <div class="tailieu">
+                                            <a class="nav-link" href="Tai_lieu.html" id="highlight_chu">Tài liệu</a>
+                                        </div>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="Gioithieu.html">Giới thiệu </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="Gioi_thieu_sach.html">Giới thiệu sách</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="Trang_chu.html">Liên hệ</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="Tin_tuc.html">Tin tức</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="form_header">
+                                <form class="form-inline">
+                                    <div class="input-group">
+                                        <div class="nut_timkiem"><i class="fa fa-search" aria-hidden="true"></i></div
+                                            class="nut_timkiem">
+                                        <input type="text" class="form-control " placeholder="" width="100%">
+                                    </div>
+                                </form>
+                            </div>
+                            <a href="Dang_nhap.html">
+                                <div class="button-header"><button type="button" class="btn btn-primary">Đăng
+                                        nhập</button>
+                            </a>
+                    </div>
+                    <div class="cart">
+                        <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                    </div>
+                    </ul>
+            </div>
+            </nav>
+        </div>
+        <div class="container   dropdown-tl-main " id="showtailieu" onmouseenter="showTailieu()"
+            onmouseleave="hideTailieu()">
+            <div class="vien dropdown-tl-vien">
+                <div class="d-flex align-items-center justify-content-center">
+                    <div class="dropdown-tailieu">
+                        <div class="row">
+                            <div class="col-sm-7">
+                                <a href="Sach_giay.html"><button type="button" class="btn btn-light">Sách
+                                        giấy</button></a>
+                                <a href=""><button type="button" class="btn btn-light">Sách điện tử</button></a>
+                                <a href=""><button type="button" class="btn btn-light">Báo, tạp chí</button></a>
+                                <a href=""><button type="button" class="btn btn-light">Luận văn, luận
+                                        án</button></a>
+                                <a href=""><button type="button" class="btn btn-light">Tài liệu tham khảo
+                                    </button></a>
+                                <a href=""><button type="button" class="btn btn-light">Video </button></a>
+                                <a href=""><button type="button" class="btn btn-light">Ảnh </button></a>
+                            </div>
+                            <div class="col-sm-5">
+                                <img src="Dream/Images/Banner/banner-menu.jpg" alt="" style="width: 100%;">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid menu-content">
+        <div class="container">
+            <div class="menu_con">
+                <a href="Trang_chu.html"><span>Trang Chủ</span></a>
+                <a href="Tai_lieu.html"><span>Tài liệu</span></a>
+                <a href="Sach_giay.html"><span>Sách Điện tử</span></a>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid content">
+        <div class="container ">
+            <div class="d-flex ">
+                <div class=" left_content vien_all ">
+                    <div class="left_ct_mucluc ">
+                        <span onclick="toggleMenu()">
+                            <h8>Thư mục</h8><i id="mui_ten" class="fa-solid fa-sort-down"></i>
+                        </span>
+                        <form action="" id="subMenu">
+                            <div class="form-check">
+                                <input type="radio" class="form-check-input" id="radio1" name="optradio" value="option1"
+                                    checked>
+                                <label class="form-check-label" for="radio1">Tiểu thuyết</label>
+                            </div>
+                            <div class="form-check">
+                                <input type="radio" class="form-check-input" id="radio2" name="optradio"
+                                    value="option2">
+                                <label class="form-check-label" for="radio2">Kỹ năng sống và phát triển bản thân</label>
+                            </div>
+                            <div class="form-check">
+                                <input type="radio" class="form-check-input" id="radio3" name="optradio" value="option3"
+                                    checked>
+                                <label class="form-check-label" for="radio3">Sách thiếu nhi và thanh thiếu niên</label>
+                            </div>
+                            <div class="form-check">
+                                <input type="radio" class="form-check-input" id="radio4" name="optradio"
+                                    value="option4">
+                                <label class="form-check-label" for="radio4">Khoa học viễn tưởng</label>
+                            </div>
+                            <div class="form-check">
+                                <input type="radio" class="form-check-input" id="radio5" name="optradio" value="option5"
+                                    checked>
+                                <label class="form-check-label" for="radio5">Tự truyện và hồi ký</label>
+                            </div>
+                            <div class="form-check">
+                                <input type="radio" class="form-check-input" id="radio6" name="optradio"
+                                    value="option6">
+                                <label class="form-check-label" for="radio6">Phi hư cấu</label>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class=" right_content vien_all ">
+                    <div class="sach_right">
+                        <div class="loai_sach d-flex justify-content-between align-items-center">
+                            <h5>Tiểu thuyết</h5>
+                            <a href=""><button type="button" class="btn btn-success">Xem thêm</button></a>
+                        </div>
+                        <div class="sach d-flex justify-content-center align-items-center">
+                            <div class="muc_sach">
+                                <a href="">
+                                    <img src="Dream/Images/Sách/Sách giấy/Tiêu thuyết/Nước ngoài/Giết con chim nhại - Harper Lee.jpg"
+                                        alt="">
+                                    <h5>Giết con chim nhại</h5>
+                                </a>
+                                <p>Sách tham khảo</p>
+                                <span>
+                                    <button type="button"><i class="fa fa-eye" aria-hidden="true"></i> 1
+                                        <span>lượt xem</span></button>
+                                    <button type="button"><i class="fa-regular fa-heart"></i></i>0</button>
+                                </span>
+                            </div>
+                            <div class="muc_sach">
+                                <a href="">
+                                    <img src="Dream/Images/Sách/Sách giấy/Tiêu thuyết/Nước ngoài/Kiêu hãnh và Định kiến - Jane Austen.jpg"
+                                        alt="">
+                                    <h5>Kiêu hãnh và Định kiến</h5>
+                                </a>
+                                <p>Sách tham khảo</p>
+                                <span>
+                                    <button type="button"><i class="fa fa-eye" aria-hidden="true"></i> 1
+                                        <span>lượt xem</span></button>
+                                    <button type="button"><i class="fa-regular fa-heart"></i></i>0</button>
+                                </span>
+                            </div>
+                            <div class="muc_sach">
+                                <a href="">
+                                    <img src="Dream/Images/Sách/Sách giấy/Tiêu thuyết/Nước ngoài/Mật mã Da Vinci - Dan Brown.jpg"
+                                        alt="">
+                                    <h5>Mật mã Da Vinci</h5>
+                                </a>
+                                <p>Sách tham khảo</p>
+                                <span>
+                                    <button type="button"><i class="fa fa-eye" aria-hidden="true"></i> 1
+                                        <span>lượt xem</span></button>
+                                    <button type="button"><i class="fa-regular fa-heart"></i></i>0</button>
+                                </span>
+                            </div>
+                            <div class="muc_sach">
+                                <a href="">
+                                    <img src="Dream/Images/Sách/Sách giấy/Tiêu thuyết/Nước ngoài/Rừng Na Uy - Haruki Murakami.jpg"
+                                        alt="">
+                                    <h5>Rừng Na Uy</h5>
+                                </a>
+                                <p>Sách tham khảo</p>
+                                <span>
+                                    <button type="button"><i class="fa fa-eye" aria-hidden="true"></i> 1
+                                        <span>lượt xem</span></button>
+                                    <button type="button"><i class="fa-regular fa-heart"></i></i>0</button>
+                                </span>
+                            </div>
+                            <div class="muc_sach">
+                                <a href="">
+                                    <img src="Dream/Images/Sách/Sách giấy/Tiêu thuyết/Nước ngoài/Đồi gió hú - Emily Brontë.jpg"
+                                        alt="">
+                                    <h5>Đồi gió hú</h5>
+                                </a>
+                                <p>Sách tham khảo</p>
+                                <span>
+                                    <button type="button"><i class="fa fa-eye" aria-hidden="true"></i> 1
+                                        <span>lượt xem</span></button>
+                                    <button type="button"><i class="fa-regular fa-heart"></i></i>0</button>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sach_right">
+                        <div class="loai_sach d-flex justify-content-between align-items-center">
+                            <h5>Kỹ năng Sống và phát triển bản thân</h5>
+                            <a href=""><button type="button" class="btn btn-success">Xem thêm</button></a>
+                        </div>
+                        <div class="sach d-flex justify-content-center align-items-center">
+                            <div class="muc_sach">
+                                <a href="">
+                                    <img src="Dream/Images/Sách/Sách giấy/Kỹ năng sống và phát triên bản thân/VN/Bí quyết sống.jpg"
+                                        alt="">
+                                    <h5>Bí quyết sống</h5>
+                                </a>
+                                <p>Sách tham khảo</p>
+                                <span>
+                                    <button type="button"><i class="fa fa-eye" aria-hidden="true"></i> 1
+                                        <span>lượt xem</span></button>
+                                    <button type="button"><i class="fa-regular fa-heart"></i></i>0</button>
+                                </span>
+                            </div>
+                            <div class="muc_sach">
+                                <a href="">
+                                    <img src="Dream/Images/Sách/Sách giấy/Kỹ năng sống và phát triên bản thân/VN/Kẻ thành công.jpg"
+                                        alt="">
+                                    <h5>Kẻ thành công</h5>
+                                </a>
+                                <p>Sách tham khảo</p>
+                                <span>
+                                    <button type="button"><i class="fa fa-eye" aria-hidden="true"></i> 1
+                                        <span>lượt xem</span></button>
+                                    <button type="button"><i class="fa-regular fa-heart"></i></i>0</button>
+                                </span>
+                            </div>
+                            <div class="muc_sach">
+                                <a href="">
+                                    <img src="Dream/Images/Sách/Sách giấy/Kỹ năng sống và phát triên bản thân/Nước ngoài/Nghĩ giàu và làm giàu - Napoleon Hill.jpg"
+                                        alt="">
+                                    <h5>Nghĩ giàu và làm giàu</h5>
+                                </a>
+                                <p>Sách tham khảo</p>
+                                <span>
+                                    <button type="button"><i class="fa fa-eye" aria-hidden="true"></i> 1
+                                        <span>lượt xem</span></button>
+                                    <button type="button"><i class="fa-regular fa-heart"></i></i>0</button>
+                                </span>
+                            </div>
+                            <div class="muc_sach">
+                                <a href="">
+                                    <img src="Dream/Images/Sách/Sách giấy/Kỹ năng sống và phát triên bản thân/Nước ngoài/Sức mạnh của hiện tại - Eckhart Tolle.jpg"
+                                        alt="">
+                                    <h5>Sức mạnh của hiện tại</h5>
+                                </a>
+                                <p>Sách tham khảo</p>
+                                <span>
+                                    <button type="button"><i class="fa fa-eye" aria-hidden="true"></i> 1
+                                        <span>lượt xem</span></button>
+                                    <button type="button"><i class="fa-regular fa-heart"></i></i>0</button>
+                                </span>
+                            </div>
+                            <div class="muc_sach">
+                                <a href="">
+                                    <img src="Dream/Images/Sách/Sách giấy/Kỹ năng sống và phát triên bản thân/Nước ngoài/Đắc nhân tâm - Dale Carnegie.jpg"
+                                        alt="">
+                                    <h5>Đắc nhân tâm</h5>
+                                </a>
+                                <p>Sách tham khảo</p>
+                                <span>
+                                    <button type="button"><i class="fa fa-eye" aria-hidden="true"></i> 1
+                                        <span>lượt xem</span></button>
+                                    <button type="button"><i class="fa-regular fa-heart"></i></i>0</button>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sach_right">
+                        <div class="loai_sach d-flex justify-content-between align-items-center">
+                            <h5>Sách thiếu nhi và thanh niên</h5>
+                            <a href=""><button type="button" class="btn btn-success">Xem thêm</button></a>
+                        </div>
+                        <div class="sach d-flex justify-content-center align-items-center">
+                            <div class="muc_sach">
+                                <a href="">
+                                    <img src="Dream/Images/Sách/Sách giấy/Sách thiếu nhi và thanh thiếu niên/Nước ngoài/Hoàng tử bé - Antoine de Saint-Exupéry.jpg"
+                                        alt="">
+                                    <h5>Hoàng tử bé</h5>
+                                </a>
+                                <p>Sách tham khảo</p>
+                                <span>
+                                    <button type="button"><i class="fa fa-eye" aria-hidden="true"></i> 1
+                                        <span>lượt xem</span></button>
+                                    <button type="button"><i class="fa-regular fa-heart"></i></i>0</button>
+                                </span>
+                            </div>
+                            <div class="muc_sach">
+                                <a href="">
+                                    <img src="Dream/Images/Sách/Sách giấy/Sách thiếu nhi và thanh thiếu niên/Nước ngoài/Cậu bé pyjama sọc.jpg"
+                                        alt="">
+                                    <h5>Cậu bé pyjama sọc</h5>
+                                </a>
+                                <p>Sách tham khảo</p>
+                                <span>
+                                    <button type="button"><i class="fa fa-eye" aria-hidden="true"></i> 1
+                                        <span>lượt xem</span></button>
+                                    <button type="button"><i class="fa-regular fa-heart"></i></i>0</button>
+                                </span>
+                            </div>
+                            <div class="muc_sach">
+                                <a href="">
+                                    <img src="Dream/Images/Sách/Sách giấy/Sách thiếu nhi và thanh thiếu niên/VN/Cuộc chiến tuổi dậy thì.jpg"
+                                        alt="">
+                                    <h5>Cuộc chiến tuổi dậy thì</h5>
+                                </a>
+                                <p>Sách tham khảo</p>
+                                <span>
+                                    <button type="button"><i class="fa fa-eye" aria-hidden="true"></i> 1
+                                        <span>lượt xem</span></button>
+                                    <button type="button"><i class="fa-regular fa-heart"></i></i>0</button>
+                                </span>
+                            </div>
+                            <div class="muc_sach">
+                                <a href="">
+                                    <img src="Dream/Images/Sách/Sách giấy/Sách thiếu nhi và thanh thiếu niên/VN/Hè về.jpg"
+                                        alt="">
+                                    <h5>Hè về</h5>
+                                </a>
+                                <p>Sách tham khảo</p>
+                                <span>
+                                    <button type="button"><i class="fa fa-eye" aria-hidden="true"></i> 1
+                                        <span>lượt xem</span></button>
+                                    <button type="button"><i class="fa-regular fa-heart"></i></i>0</button>
+                                </span>
+                            </div>
+                            <div class="muc_sach">
+                                <a href="">
+                                    <img src="Dream/Images/Sách/Sách giấy/Sách thiếu nhi và thanh thiếu niên/VN/Mãi mãi tuổi 17 - Lê Minh Khuê.jpg"
+                                        alt="">
+                                    <h5>Mãi mãi tuổi 17</h5>
+                                </a>
+                                <p>Sách tham khảo</p>
+                                <span>
+                                    <button type="button"><i class="fa fa-eye" aria-hidden="true"></i> 1
+                                        <span>lượt xem</span></button>
+                                    <button type="button"><i class="fa-regular fa-heart"></i></i>0</button>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sach_right">
+                        <div class="loai_sach d-flex justify-content-between align-items-center">
+                            <h5>Phi hư cấu</h5>
+                            <a href=""><button type="button" class="btn btn-success">Xem thêm</button></a>
+                        </div>
+                        <div class="sach d-flex justify-content-center align-items-center">
+                            <div class="muc_sach">
+                                <a href="">
+                                    <img src="Dream/Images/Sách/Sách giấy/Phi hư cấu/Nước ngoài/Lược sử loài người - Yuval Noah Harari (dịch sang tiếng Việt).jpg"
+                                        alt="">
+                                    <h5>Lược sử loài người</h5>
+                                </a>
+                                <p>Sách tham khảo</p>
+                                <span>
+                                    <button type="button"><i class="fa fa-eye" aria-hidden="true"></i> 1
+                                        <span>lượt xem</span></button>
+                                    <button type="button"><i class="fa-regular fa-heart"></i></i>0</button>
+                                </span>
+                            </div>
+                            <div class="muc_sach">
+                                <a href="">
+                                    <img src="Dream/Images/Sách/Sách giấy/Phi hư cấu/VN/Văn hóa Việt Nam Trần Ngọc Thêm.jpg"
+                                        alt="">
+                                    <h5>Văn hóa Việt Nam</h5>
+                                </a>
+                                <p>Sách tham khảo</p>
+                                <span>
+                                    <button type="button"><i class="fa fa-eye" aria-hidden="true"></i> 1
+                                        <span>lượt xem</span></button>
+                                    <button type="button"><i class="fa-regular fa-heart"></i></i>0</button>
+                                </span>
+                            </div>
+                            <div class="muc_sach">
+                                <a href="">
+                                    <img src="Dream/Images/Sách/Sách giấy/Phi hư cấu/Nước ngoài/Lược sử tương lai.jpg"
+                                        alt="">
+                                    <h5>Lược sử tương lai</h5>
+                                </a>
+                                <p>Sách tham khảo</p>
+                                <span>
+                                    <button type="button"><i class="fa fa-eye" aria-hidden="true"></i> 1
+                                        <span>lượt xem</span></button>
+                                    <button type="button"><i class="fa-regular fa-heart"></i></i>0</button>
+                                </span>
+                            </div>
+                            <div class="muc_sach">
+                                <a href="">
+                                    <img src="Dream/Images/Sách/Sách giấy/Phi hư cấu/Nước ngoài/Tư duy, nhanh và chậm.jpg"
+                                        alt="">
+                                    <h5>Tư duy, nhanh và chậm</h5>
+                                </a>
+                                <p>Sách tham khảo</p>
+                                <span>
+                                    <button type="button"><i class="fa fa-eye" aria-hidden="true"></i> 1
+                                        <span>lượt xem</span></button>
+                                    <button type="button"><i class="fa-regular fa-heart"></i></i>0</button>
+                                </span>
+                            </div>
+                            <div class="muc_sach">
+                                <a href="">
+                                    <img src="Dream/Images/Sách/Sách giấy/Phi hư cấu/Nước ngoài/Những điều tôi biết chắc chắn.jpg"
+                                        alt="">
+                                    <h5>Những điều tôi biết chắc chắn</h5>
+                                </a>
+                                <p>Sách tham khảo</p>
+                                <span>
+                                    <button type="button"><i class="fa fa-eye" aria-hidden="true"></i> 1
+                                        <span>lượt xem</span></button>
+                                    <button type="button"><i class="fa-regular fa-heart"></i></i>0</button>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sach_right">
+                        <div class="loai_sach d-flex justify-content-between align-items-center">
+                            <h5>Khoa học viễn tưởng</h5>
+                            <a href=""><button type="button" class="btn btn-success">Xem thêm</button></a>
+                        </div>
+                        <div class="sach d-flex justify-content-center align-items-center">
+                            <div class="muc_sach">
+                                <a href="">
+                                    <img src="Dream/Images/Sách/Sách giấy/Khoa học viễn tưởng/Nước ngoài/Hành tinh cát - Frank Herbert.jpg"
+                                        alt="">
+                                    <h5>Hành tinh cát</h5>
+                                </a>
+                                <p>Sách tham khảo</p>
+                                <span>
+                                    <button type="button"><i class="fa fa-eye" aria-hidden="true"></i> 1
+                                        <span>lượt xem</span></button>
+                                    <button type="button"><i class="fa-regular fa-heart"></i></i>0</button>
+                                </span>
+                            </div>
+                            <div class="muc_sach">
+                                <a href="">
+                                    <img src="Dream/Images/Sách/Sách giấy/Khoa học viễn tưởng/Nước ngoài/Mật mã Da Vinci.jpg"
+                                        alt="">
+                                    <h5>Mật mã Da Vinci</h5>
+                                </a>
+                                <p>Sách tham khảo</p>
+                                <span>
+                                    <button type="button"><i class="fa fa-eye" aria-hidden="true"></i> 1
+                                        <span>lượt xem</span></button>
+                                    <button type="button"><i class="fa-regular fa-heart"></i></i>0</button>
+                                </span>
+                            </div>
+                            <div class="muc_sach">
+                                <a href="">
+                                    <img src="Dream/Images/Sách/Sách giấy/Khoa học viễn tưởng/Nước ngoài/Thế giới mới (Brave New World) - Aldous Huxley.jpg"
+                                        alt="">
+                                    <h5>Thế giới mới</h5>
+                                </a>
+                                <p>Sách tham khảo</p>
+                                <span>
+                                    <button type="button"><i class="fa fa-eye" aria-hidden="true"></i> 1
+                                        <span>lượt xem</span></button>
+                                    <button type="button"><i class="fa-regular fa-heart"></i></i>0</button>
+                                </span>
+                            </div>
+                            <div class="muc_sach">
+                                <a href="">
+                                    <img src="Dream/Images/Sách/Sách giấy/Khoa học viễn tưởng/Nước ngoài/Lược sử thời gian Stephen Hawking.jpg"
+                                        alt="">
+                                    <h5>Lược sử thời gian</h5>
+                                </a>
+                                <p>Sách tham khảo</p>
+                                <span>
+                                    <button type="button"><i class="fa fa-eye" aria-hidden="true"></i> 1
+                                        <span>lượt xem</span></button>
+                                    <button type="button"><i class="fa-regular fa-heart"></i></i>0</button>
+                                </span>
+                            </div>
+                            <div class="muc_sach">
+                                <a href="">
+                                    <img src="Dream/Images/Sách/Sách giấy/Khoa học viễn tưởng/Nước ngoài/Trò chơi của Ender - Orson Scott Card.jpg"
+                                        alt="">
+                                    <h5>Trò chơi của Ender</h5>
+                                </a>
+                                <p>Sách tham khảo</p>
+                                <span>
+                                    <button type="button"><i class="fa fa-eye" aria-hidden="true"></i> 1
+                                        <span>lượt xem</span></button>
+                                    <button type="button"><i class="fa-regular fa-heart"></i></i>0</button>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sach_right">
+                        <div class="loai_sach d-flex justify-content-between align-items-center">
+                            <h5>Tự truyện và hồi ký</h5>
+                            <a href=""><button type="button" class="btn btn-success">Xem thêm</button></a>
+                        </div>
+                        <div class="sach d-flex justify-content-center align-items-center">
+                            <div class="muc_sach">
+                                <a href="">
+                                    <img src="Dream/Images/Sách/Sách giấy/Tự truyện và hồi ký/Nước ngoài/Con đường đi đến tự do - Nelson Mandela.jpg"
+                                        alt="">
+                                    <h5>Con đường đi đến tự do</h5>
+                                </a>
+                                <p>Sách tham khảo</p>
+                                <span>
+                                    <button type="button"><i class="fa fa-eye" aria-hidden="true"></i> 1
+                                        <span>lượt xem</span></button>
+                                    <button type="button"><i class="fa-regular fa-heart"></i></i>0</button>
+                                </span>
+                            </div>
+                            <div class="muc_sach">
+                                <a href="">
+                                    <img src="Dream/Images/Sách/Sách giấy/Tự truyện và hồi ký/Nước ngoài/The Diary of a Young Girl.jpg"
+                                        alt="">
+                                    <h5>The Diary of a Young Girl</h5>
+                                </a>
+                                <p>Sách tham khảo</p>
+                                <span>
+                                    <button type="button"><i class="fa fa-eye" aria-hidden="true"></i> 1
+                                        <span>lượt xem</span></button>
+                                    <button type="button"><i class="fa-regular fa-heart"></i></i>0</button>
+                                </span>
+                            </div>
+                            <div class="muc_sach">
+                                <a href="">
+                                    <img src="Dream/Images/Sách/Sách giấy/Tự truyện và hồi ký/Nước ngoài/Đừng bao giờ từ bỏ ước mơ.jpg"
+                                        alt="">
+                                    <h5>Đừng bao giờ từ bỏ ước mơ</h5>
+                                </a>
+                                <p>Sách tham khảo</p>
+                                <span>
+                                    <button type="button"><i class="fa fa-eye" aria-hidden="true"></i> 1
+                                        <span>lượt xem</span></button>
+                                    <button type="button"><i class="fa-regular fa-heart"></i></i>0</button>
+                                </span>
+                            </div>
+                            <div class="muc_sach">
+                                <a href="">
+                                    <img src="Dream/Images/Sách/Sách giấy/Tự truyện và hồi ký/VN/Nhật ký trong tù - Hồ Chí Minh.jpg"
+                                        alt="">
+                                    <h5>Nhật ký trong tù</h5>
+                                </a>
+                                <p>Sách tham khảo</p>
+                                <span>
+                                    <button type="button"><i class="fa fa-eye" aria-hidden="true"></i> 1
+                                        <span>lượt xem</span></button>
+                                    <button type="button"><i class="fa-regular fa-heart"></i></i>0</button>
+                                </span>
+                            </div>
+                            <div class="muc_sach">
+                                <a href="">
+                                    <img src="Dream/Images/Sách/Sách giấy/Tự truyện và hồi ký/VN/Những năm tháng không thể quên.jpg"
+                                        alt="">
+                                    <h5>Những năm tháng không thể quên</h5>
+                                </a>
+                                <p>Sách tham khảo</p>
+                                <span>
+                                    <button type="button"><i class="fa fa-eye" aria-hidden="true"></i> 1
+                                        <span>lượt xem</span></button>
+                                    <button type="button"><i class="fa-regular fa-heart"></i></i>0</button>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid footer avien">
+        <div class="container ">
+            <div class="logo-footer">
+                <img src="C:\Users\ACER\Downloads\Dream\Dream\Images\Logo\Dream 2.png" alt="">
+                <h3>Hãy nắm lấy ước mơ của chính mình</h3>
+            </div>
+            <div class="row">
+                <div class="col-sm-2">
+
+                </div>
+                <div class="footer-danh mục col-sm-3">
+                    <p>Danh mục</p>
+                    <ul class="nav flex-column ">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html"><i class="fa fa-circle-thin"
+                                    aria-hidden="true"></i>Trang chủ</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Tai_lieu.html"><i class="fa fa-circle-thin"
+                                    aria-hidden="true"></i>Tài Liệu</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Gioi_thieu_sach.html"><i class="fa fa-circle-thin"
+                                    aria-hidden="true"></i>Giới thiệu Sách</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Tin_tuc.html"><i class="fa fa-circle-thin"
+                                    aria-hidden="true"></i>Tin tức</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-tailieu col-sm-3">
+                    <p>Tài liệu</p>
+                    <ul class="nav flex-column ">
+                        <li class="nav-item">
+                            <a class="nav-link" href="Trang_chu.html"><i class="fa fa-circle-thin"
+                                    aria-hidden="true"></i>Sách điện tử</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Gioi_Thieu.html"><i class="fa fa-circle-thin"
+                                    aria-hidden="true"></i>Sách nói</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="San_Pham.html"><i class="fa fa-circle-thin"
+                                    aria-hidden="true"></i>Luận án, luận văn</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Khuyen_mai.html"><i class="fa fa-circle-thin"
+                                    aria-hidden="true"></i>Tài liệu tham khảo</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-tailieu col-sm-3">
+                    <p>Giới thiệu & liên hệ</p>
+                    <ul class="nav flex-column ">
+                        <li class="nav-item">
+                            <a class="nav-link" href="Lien_he.html"><i class="fa fa-circle-thin"
+                                    aria-hidden="true"></i>Giới thiệu</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Tin_tuc.html"><i class="fa fa-circle-thin"
+                                    aria-hidden="true"></i>Liên hệ</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-menu col-sm-1">
+                    <p>Kết nối</p>
+                    <div class="d-flex flex-column ">
+                        <a href=""> <i class="fa-brands fa-facebook"></i></a>
+                        <a href=""><i class="fa-brands fa-facebook-messenger"></i></a>
+                        <a href=""><i class="fa-brands fa-twitter"></i></a>
+                        <a href=""><i class="fa-brands fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <hr>
+        </div>
+    </div>
+</body>
+<script src="Dream/JS/tailieu.js">
+</script>
+<script src="Dream/JS/carousel.js">
+</script>
+<script src="Dream/JS/move_anh.js"></script>
+
+</html>

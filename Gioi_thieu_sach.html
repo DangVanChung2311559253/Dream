@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <title>Giới thiệu sách</title>
+    <link rel="stylesheet" href="Dream/CSS/header_footer.css">
+    <link rel="stylesheet" href="Dream/CSS/Gioi_thieu_sach.css">
+
+</head>
+
+<body>
+    <div class="container-fluid header-bg-1 sticky-top vien">
+        <div class="container ">
+            <div class="d-flex align-items-center justify-content-center">
+                <div class="logo_header">
+                    <a class="nav-link" href="index.html"><img src="Dream/Images/Logo/Dream.png" alt=""></a>
+                </div>
+                <nav class=" navbar navbar-expand-sm ">
+                    <button class=" navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapsibleNavbar">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                        <ul class="navbar-nav">
+
+                            <div class="menu_header">
+                                <ul class="navbar-nav">
+                                    <li class="nav-item ">
+                                        <a href="index.html">Trang chủ</a>
+                                    </li>
+                                    <li class="nav-item " onmouseenter="showTailieu()" onclick="toggleTailieu()"
+                                        onmouseleave="hideTailieu()">
+                                        <div class="tailieu">
+                                            <a class="nav-link" href="Tai_lieu.html">Tài liệu</a>
+                                        </div>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="Gioithieu.html">Giới thiệu </a>
+                                    </li>
+                                    <li class="nav-item" id="highlight_gach">
+                                        <a href="Gioi_thieu_sach.html" id="highlight_chu">Giới thiệu sách</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="Tin_tuc.html">Tin tức</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="form_header">
+                                <form class="form-inline">
+                                    <div class="input-group">
+                                        <div class="nut_timkiem"><i class="fa fa-search" aria-hidden="true"></i></div
+                                            class="nut_timkiem">
+                                        <input type="text" class="form-control " placeholder="" width="100%">
+                                    </div>
+                                </form>
+                            </div>
+                            <a href="Dang_nhap.html">
+                                <div class="button-header"><button type="button" class="btn btn-primary">Đăng
+                                        nhập</button>
+                            </a>
+                    </div>
+                    <div class="cart">
+                        <a href="Gio_hang.html"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a href="Gio_hang.html">
+                    </div>
+                    </ul>
+            </div>
+            </nav>
+        </div>
+        <div class="container   dropdown-tl-main " id="showtailieu" onmouseenter="showTailieu()"
+            onmouseleave="hideTailieu()">
+            <div class="vien dropdown-tl-vien">
+                <div class="d-flex align-items-center justify-content-center">
+                    <div class="dropdown-tailieu">
+                        <div class="row">
+                            <div class="col-sm-7">
+                                <a href="Sach_giay.html"><button type="button" class="btn btn-light">Sách giấy</button></a>
+                                <a href="Sach_dien_tu.html"><button type="button" class="btn btn-light">Sách điện tử</button></a>
+                                <a href=""><button type="button" class="btn btn-light">Báo, tạp chí</button></a>
+                                <a href=""><button type="button" class="btn btn-light">Luận văn, luận
+                                        án</button></a>
+                                <a href=""><button type="button" class="btn btn-light">Tài liệu tham khảo
+                                    </button></a>
+                                <a href=""><button type="button" class="btn btn-light">Video </button></a>
+                                <a href=""><button type="button" class="btn btn-light">Ảnh </button></a>
+                            </div>
+                            <div class="col-sm-5">
+                                <img src="Dream/Images/Banner/banner-menu.jpg" alt="" style="width: 100%;">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid gt_sach">
+        <div class="container">
+            <div class="menu_con_gt">
+                <span><a href="index.html">Trang Chủ</a></span>
+                <span>Giới thiệu sách</span>
+            </div>
+            <div class="gioi_thieu row">
+                <div class="gt_left col-sm-7">
+                    <div class="d-flex nd_gt ">
+                        <video src="C:\Users\ACER\Downloads\Dream\Dream\Images\Sách\Video\Sach gio dau mua.mp4" controls
+                            poster="C:\Users\ACER\Downloads\Dream\Dream\Images\Sách\Video\Background video\gio-lanh-dau-mua-tap-truyen-ngan.gif"></video>
+                        <div class="nd_gt_sach">
+                            <span>
+                                <img src="Dream/Images/Logo/OIP.jpg" alt="">Giới thiệu tập sách mới tháng 12
+                            </span>
+                            <span>
+                                <img src="Dream/Images/Logo/OIP.jpg" alt="">Cuốn sách phát hành:"Gió đầu mùa"
+                            </span>
+                            <p>6/11/2024</p>
+                            <div>
+                                Gió Lạnh Đầu Mùa tập hợp toàn bộ những tác phẩm trong tập truyện ngắn Gió đầu mùa của nhà văn Thạch Lam, cuốn sách bao gồm các truyện: Đứa con đầu lòng, Nhà mẹ Lê, Trở về…Trong những truyện 
+                                ngắn của ông người ta thấm thía nỗi khổ đau, bất hạnh, hoàn cảnh éo le của những con người nghèo khổ vừa cảm nhận sâu sắc tình người ấm nồng, cao quý, thiêng liêng.
+                                Khi giới thiệu về tập truyện ngắn Gió đầu mùa, Thạch Lam viết rằng: "Đối với tôi văn chương không phải là một cách đem đến cho người đọc sự thoát ly trong sự quên
+                                trái lại văn chương là một thứ khí giới thanh cao và đắc lực mà chúng ta có, 
+                                để vừa tố cáo và thay đổi một cái thế giới giả dối và tàn ác, làm cho lòng người được thêm trong sạch và phong phú hơn".
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tootal_trang">
+
+                    </div>
+                </div>
+                <div class="gt_right col-sm-5">
+                    <h5>Xem nhiều</h5>
+                    <div class="nd_gt_right">
+                        <div>
+                            <span>
+                                <img src="Dream/Images/Logo/OIP.jpg" alt="">Sách mới tháng 12
+                            </span>
+                            <span>
+                                <img src="Dream/Images/Logo/OIP.jpg" alt="">Cuốn sách:"Gió đầu mùa"
+                            </span>
+                            <button ><i class="fa-solid fa-eye"></i> 190 lượt                        
+                                xem</button>
+                        </div>
+                        <img id="Images-gt" src="Dream/Images/Logo/OIP.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid footer avien">
+        <div class="container ">
+            <div class="logo-footer">
+                <img src="Dream/Images/Logo/Dream 2.png" alt="">
+                <h3>Hãy nắm lấy ước mơ của chính mình</h3>
+            </div>
+            <div class="row">
+                <div class="col-sm-2">
+
+                </div>
+                <div class="footer-danh mục col-sm-3">
+                    <p>Danh mục</p>
+                    <ul class="nav flex-column ">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html"><i class="fa fa-circle-thin"
+                                    aria-hidden="true"></i>Trang chủ</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Tai_lieu.html"><i class="fa fa-circle-thin"
+                                    aria-hidden="true"></i>Tài Liệu</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Gioi_thieu_sach.html"><i class="fa fa-circle-thin"
+                                    aria-hidden="true"></i>Giới thiệu Sách</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Tin_tuc.html"><i class="fa fa-circle-thin"
+                                    aria-hidden="true"></i>Tin tức</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-tailieu col-sm-3">
+                    <p>Tài liệu</p>
+                    <ul class="nav flex-column ">
+                        <li class="nav-item">
+                            <a class="nav-link" href="Trang_chu.html"><i class="fa fa-circle-thin"
+                                    aria-hidden="true"></i>Sách điện tử</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Gioi_Thieu.html"><i class="fa fa-circle-thin"
+                                    aria-hidden="true"></i>Sách nói</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="San_Pham.html"><i class="fa fa-circle-thin"
+                                    aria-hidden="true"></i>Luận án, luận văn</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Khuyen_mai.html"><i class="fa fa-circle-thin"
+                                    aria-hidden="true"></i>Tài liệu tham khảo</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-tailieu col-sm-3">
+                    <p>Giới thiệu & liên hệ</p>
+                    <ul class="nav flex-column ">
+                        <li class="nav-item">
+                            <a class="nav-link" href="Lien_he.html"><i class="fa fa-circle-thin"
+                                    aria-hidden="true"></i>Giới thiệu</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Tin_tuc.html"><i class="fa fa-circle-thin"
+                                    aria-hidden="true"></i>Liên hệ</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-menu col-sm-1">
+                    <p>Kết nối</p>
+                    <div class="d-flex flex-column ">
+                        <a href=""> <i class="fa-brands fa-facebook"></i></a>
+                        <a href=""><i class="fa-brands fa-facebook-messenger"></i></a>
+                        <a href=""><i class="fa-brands fa-twitter"></i></a>
+                        <a href=""><i class="fa-brands fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <hr>
+        </div>
+    </div>
+</body>
+<script src="Dream/JS/tailieu.js">
+</script>
+
+</html>

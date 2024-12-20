@@ -1,0 +1,105 @@
+/* -------------bg-1-------------------- */
+.bg-1{
+    margin-top: 20px;
+}
+
+.bg-1 .carousel-inner{
+    height: 400px;
+    
+}
+
+/* ----------------bg-2 ---------------------- */
+.bg-2{
+    margin-top: 30px;
+}
+
+.bg-2 .ds_sach_dt{
+    margin: 20px;
+
+}
+
+.bg-2 .menu_sdientu{
+    justify-content: space-between;
+    display: flex;
+    border-bottom: 1px solid rgb(201, 200, 200);
+}
+
+.bg-2 .menu_sdientu a{
+    color: #2db56b;
+}
+.bg-2 .menu_sdientu span:hover{
+    border-bottom: 1px solid #2db56b;
+}
+
+.bg-2 .loai_sdientu{
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+}
+
+.bg-2 .loai_sdientu img{
+    width: 100%;
+    border-radius: 10px;
+
+}
+
+.bg-2 .loai_sdientu .sdientu{
+    flex: 20%;
+}
+
+
+.bg-2 .loai_sdientu .sdientu, .sdientu:last-child{
+    margin-right: 15px;
+}
+
+.bg-2 .loai_sdientu  .sdientu:last-child{
+    margin-right: 0px;
+}
+
+
+.bg-2 .loai_sdientu  .sdientu h5{
+    margin-top: 10px;
+    font-size: 18px;
+    height: 50px;
+    width: 200px;
+    margin-bottom: 0;
+}
+
+.bg-2 .loai_sdientu  .sdientu a img {
+    transition: opacity 0.3s ease; 
+}
+
+.bg-2 .loai_sdientu  .sdientu a:hover{
+    color: #2db56b;
+    opacity: 0.8; 
+    filter: brightness(0.8); 
+}
+
+.bg-2 .loai_sdientu  .sdientu img:hover{
+    opacity: 0.8; 
+    filter: brightness(0.8); 
+}
+
+
+.bg-2 .loai_sdientu  .sdientu p{
+    font-size: 14px;
+}
+
+
+.bg-2 .loai_sdientu  .sdientu span button{
+    font-size: 14px;
+    background-color: #d9d9d9;
+    border: 0;
+    border-radius: 10px;
+    margin-right: 3px;
+}
+
+
+.bg-2 .loai_sdientu  .sdientu span button:nth-child(2) i{
+    margin-right: 5px;
+}
+
+#album-anh img{
+    width: 100%;
+    margin-bottom: 10px;
+}

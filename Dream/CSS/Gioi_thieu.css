@@ -1,0 +1,28 @@
+.content{
+    margin-top: 30px;
+}
+
+ img{
+    width: 100%;
+
+}
+
+.noidung{
+    padding: 20px;
+}
+
+.noidung h4{
+    margin-bottom: 10px;
+}
+
+.noidung i{
+    font-size: 20px;
+}
+
+.noidung img{
+    width: 40px;
+}
+
+.noidung .nd-1, .nd-2, .nd-3, .nd-4,.nd-5{
+    margin-top: 15px;
+}

@@ -1,0 +1,257 @@
+
+/* -----------------bg-1----------------------- */
+.bg-1{
+    background-image: url(../Images/Banner/OIP.jpg);
+    object-fit: cover;
+    width: 100%;
+    background-size: cover;
+}
+
+.scrollable{
+    padding-top: 0 !important;
+    margin-top: 10px;
+}
+
+.carousel{
+    position: relative;
+    padding: 40px 0;
+}
+
+.carousel-left{
+    position: relative;
+    width: 60%;
+    overflow: hidden;
+    color: white;
+}
+
+.carousel-left #tl_thinhhanh{
+    font-size: 25px;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.carousel-left h3{
+    margin-bottom: 20px;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+}   
+
+.scroll_sach_l{
+    max-width: 100%;
+    position: absolute;
+    top: 80px;
+}
+
+.carousel-left .scroll_sach_l img:first-of-type {
+    height: 300px;
+    width: 200px;
+    object-fit: cover;
+}
+
+.carousel-left .scroll_sach_l img {
+    width: inherit;
+    height: inherit;
+    max-width: 100vw;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: opacity 0.5s ease;
+}
+
+.carousel-left .scroll_sach_l {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.carousel-left .scroll_sach_l .chu_sc_l{
+    margin-left: 20px;
+    
+}
+
+.carousel-left .scroll_sach_l .chu_sc_l .ct_sach_l{
+    display: flex;
+    flex-direction: column;
+}
+
+.carousel-left .scroll_sach_l .chu_sc_l h3:hover{
+    color: #2db56b;
+}
+
+.carousel-left .scroll_sach_l .chu_sc_l .ct_sach_l div span:nth-child(2) {
+    margin-left: 20px;
+}
+
+.carousel-left .scroll_sach_l .chu_sc_l .ct_sach_l span:nth-child(2){
+    margin: 15px 0;
+}
+
+.carousel-left .scroll_sach_l .chu_sc_l .ct_sach_l span:nth-child(3){
+    margin-bottom: 25px ;
+}
+
+.carousel-left .scroll_sach_l .chu_sc_l .ct_sach_l  button{
+    max-width: 170px;
+    min-width: 120px;
+    border-radius: 50px;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.carousel-left .scroll_sach_l .chu_sc_l .ct_sach_l button i{
+    margin-right: 10px;
+    
+}
+
+.carousel-right{ 
+    width: 40%;
+    overflow-y: scroll;  
+    height: 430px;
+    padding: 12px;
+    padding-left: 0;
+    
+}
+
+
+.scroll_sach_r{
+    transition: opacity 0.5s ease;
+}
+
+.o_scroll_s_r:nth-child(1){
+    margin-top: 0 !important;
+}
+
+
+.scroll_sach_r .o_scroll_s_r{
+    background-color: rgba(255, 255, 255, 0.4);
+    margin: 12px ;
+    padding: 15px 15px;
+    border-radius: 10px;
+    color: white;
+}
+
+.scroll_sach_r .o_scroll_s_r img{
+    width: 73px;
+}
+
+.scroll_sach_r .o_scroll_s_r .sach_sc_r{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.scroll_sach_r .o_scroll_s_r .sach_sc_r h3{
+    font-size: 22px;
+}
+
+.scroll_sach_r .o_scroll_s_r .sach_sc_r .chu_sc_r{
+    margin-left: 15px;
+}
+
+.scroll_sach_r .o_scroll_s_r .sach_sc_r .ct_sach_r {
+    display: flex;
+    flex-direction: column;
+}
+
+.scroll_sach_r .o_scroll_s_r .sach_sc_r .ct_sach_r span{
+    font-size: 14px;
+}
+
+
+/* ----------------bg-2 ---------------------- */
+.bg-2{
+    margin-top: 30px;
+}
+
+.bg-2 .ds_sach_dt{
+    margin: 20px;
+
+}
+
+.bg-2 .menu_sdientu{
+    justify-content: space-between;
+    display: flex;
+    border-bottom: 1px solid rgb(201, 200, 200);
+}
+
+.bg-2 .menu_sdientu a{
+    color: #2db56b;
+}
+.bg-2 .menu_sdientu span:hover{
+    border-bottom: 1px solid #2db56b;
+}
+
+.bg-2 .loai_sdientu{
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+}
+
+.bg-2 .loai_sdientu img{
+    width: 100%;
+    border-radius: 10px;
+}
+
+.bg-2 .loai_sdientu .sdientu{
+    flex: 20%;
+}
+
+
+.bg-2 .loai_sdientu .sdientu, .sdientu:last-child{
+    margin-right: 15px;
+}
+
+.bg-2 .loai_sdientu  .sdientu:last-child{
+    margin-right: 0px;
+}
+
+
+.bg-2 .loai_sdientu  .sdientu h5{
+    margin-top: 10px;
+    font-size: 18px;
+    height: 50px;
+    width: 200px;
+    margin-bottom: 0;
+}
+
+.bg-2 .loai_sdientu  .sdientu a img {
+    transition: opacity 0.3s ease; 
+}
+
+.bg-2 .loai_sdientu  .sdientu a:hover{
+    color: #2db56b;
+    opacity: 0.8; 
+    filter: brightness(0.8); 
+}
+
+.bg-2 .loai_sdientu  .sdientu img:hover{
+    opacity: 0.8; 
+    filter: brightness(0.8); 
+}
+
+
+.bg-2 .loai_sdientu  .sdientu p{
+    font-size: 14px;
+}
+
+
+.bg-2 .loai_sdientu  .sdientu span button{
+    font-size: 14px;
+    background-color: #d9d9d9;
+    border: 0;
+    border-radius: 10px;
+    margin-right: 3px;
+}
+
+
+.bg-2 .loai_sdientu  .sdientu span button:nth-child(2) i{
+    margin-right: 5px;
+}
+
+#album-anh img{
+    width: 100%;
+    margin-bottom: 10px;
+}
+

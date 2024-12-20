@@ -1,0 +1,107 @@
+.gt_sach{
+    margin-top: 30px;
+}
+
+.gioi_thieu{
+    display: flex;
+}
+
+.gt_sach div:nth-child(1){
+    flex: 65%;
+    font-size: 17px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.menu_con_gt{
+    margin-bottom: 30px;
+}
+
+.menu_con_gt span::after{
+    content: "/";
+    padding-left: 8px;
+    padding-right: 5px;
+}
+
+.menu_con_gt span:last-child:after{
+    content: "";
+    
+}
+
+.menu_con_gt span:last-child{
+    color: #2c8346;
+    font-weight: bold;
+}
+
+.gioi_thieu .gt_left{
+    border-right: 1px solid black;
+    padding-right: 20px;
+}
+
+.gioi_thieu .gt_left video{
+    width: 25%;
+    flex: 50%;
+    height: fit-content;
+    margin-right: 30px;
+}
+
+.gioi_thieu .gt_left .nd_gt:hover video{
+    opacity: 0.8;
+}
+
+.gioi_thieu .gt_left .nd_gt:hover span {
+    color: #2c8346;
+}
+
+.gioi_thieu .gt_left .nd_gt_sach{
+    display: flex;
+    flex-direction: column;
+    flex: 50%;
+}
+
+.gt_left .nd_gt_sach span{
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.gt_left .nd_gt_sach img{
+    width: 35px;
+}
+
+.gt_right{
+    flex: 35%;
+    padding-left: 30px;
+}
+.gt_right h5{
+    font-weight: bold;
+    border-bottom: 3px solid #2c8346;
+    width: fit-content;
+}
+
+.gt_right .nd_gt_right{
+    display: flex;
+}
+
+.gt_right .nd_gt_right:hover div span{
+    color: #2c8346;
+    font-weight: bold;
+}
+
+.gt_right .nd_gt_right:hover #Images-gt{
+    opacity: 0.5;
+}
+
+.gt_right .nd_gt_right div img{
+    width: 35px;
+}
+
+.gt_right .nd_gt_right div button{
+    border: 0;
+    margin-top: 10px;
+    opacity: 0.5;
+    font-size: 15px;
+}
+
+.gt_right .nd_gt_right  img{
+    width: 120px;
+}
+

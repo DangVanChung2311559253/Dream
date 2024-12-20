@@ -1,0 +1,126 @@
+.gt_sach{
+    margin-top: 30px;
+}
+
+.gioi_thieu{
+    display: flex;
+}
+
+.gt_sach div:nth-child(1){
+    flex: 65%;
+    font-size: 17px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.menu_con_gt{
+    margin-bottom: 30px;
+}
+
+.menu_con_gt span::after{
+    content: "/";
+    padding-left: 8px;
+    padding-right: 5px;
+}
+
+.menu_con_gt span:last-child:after{
+    content: "";
+    
+}
+
+.menu_con_gt span:last-child{
+    color: #2c8346;
+    font-weight: bold;
+}
+
+.gioi_thieu .gt_left{
+    border-right: 1px solid black;
+    padding-right: 20px;
+}
+
+.gioi_thieu .gt_left .nd_gt{
+    display: flex;
+    justify-content: center;
+    font-weight: normal;
+
+}
+
+.gt_right{
+    flex: 35%;
+    padding-left: 30px;
+}
+.gt_right h5{
+    font-weight: bold;
+    border-bottom: 3px solid #2c8346;
+    width: fit-content;
+}
+
+
+.gioi_thieu .gt_right .nd_gt_right{
+    display: flex;
+    justify-content: center;
+    font-weight: normal;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
